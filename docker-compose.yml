@@ -3,7 +3,6 @@ services:
 
   nginx:
     image: nginx:1.23.3-alpine
-    container_name: 'minifram-nginx'
     restart: always
     ports:
       - "80:80"
@@ -24,7 +23,6 @@ services:
 
   mysql:
     image: mysql:8.0.32
-    container_name: 'minifram-mysql'
     volumes:
       - ./docker/mysql:/var/lib/mysql
     ports:
