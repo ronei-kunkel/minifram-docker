@@ -1,8 +1,6 @@
 version: "3"
 services:
 
-  # TODO: refactor to pass folder with projects rather than the framework folder to able multiproject in same infra
-
   nginx:
     image: nginx:1.23.3-alpine
     restart: always
