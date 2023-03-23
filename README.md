@@ -7,7 +7,7 @@ The second feature is support to multi projects with web and api interface. If y
 ## Images
 
 - php:8.2-fpm
-- nginx:1.23.3-alpine
+- nginx:1.18.0-alpine like
 - mysql:8.0.32
 
 ## How to
