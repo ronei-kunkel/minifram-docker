@@ -32,6 +32,10 @@ RUN docker-php-ext-install opcache \
 RUN docker-php-ext-configure gd
 RUN docker-php-ext-install gd
 
+RUN echo 'America/Sao_Paulo' >> /etc/timezone
+
+RUN ln -sf /usr/share/zoneinfo/America/Sao_Paulo /etc/localtime
+
 EXPOSE 9000
 EXPOSE 80
 CMD ["php-fpm"]
